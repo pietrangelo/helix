@@ -1,0 +1,36 @@
+theme = "ayu_dark"
+
+[editor]
+auto-save = true
+bufferline = "multiple"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'
+
+[editor.indent-guides]
+render = true
+character = "|" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+[keys.normal]
+C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"] # move line down
+C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"] # move line up
+A-C-j = ["extend_to_line_bounds", "yank", "paste_after"] # duplicate line down
+A-C-k = ["extend_to_line_bounds", "yank", "paste_before"] # duplicate line up
