@@ -9,8 +9,8 @@ hidden = false
 
 [editor.statusline]
 left = ["mode", "spinner", "version-control"]
-center = ["file-name"]
-right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+center = ["file-base-name", "file-modification-indicator"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type", "total-line-numbers"]
 separator = "│"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
